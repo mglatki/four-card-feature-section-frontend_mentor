@@ -3,6 +3,7 @@
 }
 
 body {
+    color: dimgray;
     font-family: 'Poppins',sans-serif;
     font-size: 15px;
 
@@ -70,4 +71,35 @@ body {
 img {
     align-self: flex-end;
     margin-top: 1.6rem;
+}
+
+@media (min-width: 1440px) {
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .card {
+        align-self: center;
+        max-width: 19rem;
+        margin: 0;
+    }
+
+    .card + .card {
+        margin: 0;
+    }
+
+    .supervisor {
+        grid-row: 1/-1;
+    }
+
+    .karma {
+        grid-column: 2/3;
+        grid-row: 2/-1;
+    }
+
+    .calculator {
+        grid-row: 1/-1;
+    }
 }

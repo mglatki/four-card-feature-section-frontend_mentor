@@ -10,6 +10,10 @@ body {
     padding: 0;
 }
 
+.simple__header {
+    margin-bottom: 5rem;
+}
+
 .title {
     font-weight: 200;
     font-size: 1.5rem;
@@ -21,23 +25,36 @@ body {
 }
 
 .subtitle {
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 200;
     text-align: center;
 }
 
 .card {
-    border-top: black solid 0.2em;
+    /* border: black solid 0.2em; */
     border-radius: 0.5em;
-    padding: 1.5em;
     box-shadow: 0 0.5em 1em lightgray;
-
-    display: flex;
-    flex-direction: column;
+    line-height: 1.5em;
 }
 
 .card + .card {
     margin-top: 2rem;
+}
+
+.card__content {
+    padding: 2em;
+
+    display: flex;
+    flex-direction: column;
+    /* border: blueviolet solid; */
+}
+
+.card__topline {
+    background-color: orange;
+    border-top-left-radius: 0.1em;
+    height: 0.1em;
+    margin: 0;
+    width: 100%;
 }
 
 .card__title {

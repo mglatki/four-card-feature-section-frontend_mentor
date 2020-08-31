@@ -32,7 +32,6 @@ body {
 }
 
 .card {
-    /* border: black solid 0.2em; */
     border-radius: 0.5em;
     box-shadow: 0 0.5em 1em lightgray;
     line-height: 1.5em;
@@ -47,7 +46,6 @@ body {
 
     display: flex;
     flex-direction: column;
-    /* border: blueviolet solid; */
 }
 
 .card__topline {
@@ -73,14 +71,13 @@ img {
     margin-top: 1.6rem;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1080px) {
 
     .title {
         font-size: 2rem;
     }
 
     .subtitle {
-        /* font-size: 1rem; */
         font-weight: 400;
         max-width: 30rem;
         margin: 0 auto;
@@ -90,7 +87,7 @@ img {
         display: grid;
         grid-template-columns: repeat(3, auto);
         grid-template-rows: repeat(2, 1fr);
-        grid-gap: 1rem;
+        grid-gap: 1.5rem;
         justify-content: center;
     }
 

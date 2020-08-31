@@ -76,12 +76,15 @@ img {
 @media (min-width: 1440px) {
     .cards {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 1rem;
+        justify-content: center;
     }
 
     .card {
         align-self: center;
+        justify-self: center;
         max-width: 19rem;
         margin: 0;
     }

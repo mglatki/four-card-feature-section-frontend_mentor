@@ -74,6 +74,18 @@ img {
 }
 
 @media (min-width: 1440px) {
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .subtitle {
+        /* font-size: 1rem; */
+        font-weight: 400;
+        max-width: 30rem;
+        margin: 0 auto;
+    }
+
     .cards {
         display: grid;
         grid-template-columns: repeat(3, auto);
